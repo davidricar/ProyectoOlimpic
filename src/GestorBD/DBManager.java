@@ -14,7 +14,11 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-
+/**
+ * 
+ * @author David Pacheco
+ *
+ */
 public class DBManager // esta clase del gestor, que resume el todo. Puedo usar esto como plantilla del proyecto
 {
     private Connection conn;
@@ -83,7 +87,9 @@ public class DBManager // esta clase del gestor, que resume el todo. Puedo usar 
             System.out.println("BadAss error creating connection. " + e.getMessage());
         }
     }
+   
     public void createNewTableDeporte() throws SQLException
+    
     {
         // SQL statement for creating a new table
         String sql = "CREATE TABLE IF NOT EXISTS Table_With_Deporte (\n"

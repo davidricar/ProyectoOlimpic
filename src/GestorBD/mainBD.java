@@ -6,6 +6,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 public class mainBD {
 
 	public static void main(String[] args) throws SQLException {
