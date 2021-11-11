@@ -10,23 +10,19 @@ public class TestMedalla {
 	Medalla medalla1;
 	
 	@Before
-	public void setUp() throws Exception {
-		
+	public void setup() throws Exception{
 		medalla1 = new Medalla(null);
-		
 	}
-
+	
 	@After
-	public void tearDown() throws Exception {
-		medalla1=null;
+	public void teardown() throws Exception{
+		medalla1 = null;
 	}
-
+	
 	@Test
-	public void getnomPais() {
+	public void getnomMedalla() {
 		String tipomedalla = "oro";
 		medalla1.setTipomedalla(tipomedalla);
 		assert (medalla1.getTipomedalla().equals(tipomedalla));
-		
-}
-	
+	}
 }
