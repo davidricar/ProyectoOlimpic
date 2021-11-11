@@ -1,11 +1,10 @@
+package GestorBD;
 
 import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import GestorBD.*;
 
 public class mainBD {
 
@@ -17,19 +16,15 @@ public class mainBD {
 		miManager.createLink();
 		
 		miManager.createNewTableDeporte();
-
-		miManager.insertTableDeporte("DDDD","Femenino");
+		miManager.insertTableDeporte("Baseball","Femenino");
 		
 		miManager.createNewTablePais();
-		miManager.insertTablePais("ESP");
+		miManager.insertTablePais("PER");
 		
 		miManager.createNewTableDeportista();
-		miManager.insertTableDeportista("Fernando", "masculino", 25,0005);
+		miManager.insertTableDeportista("Olga", "femenino", 35,0010);
 
-		miManager.insertTableDeporte("AAAA","Femenino");
-		
-		miManager.createNewTableDeportista();
-		miManager.insertTableDeportista("Carla", "femenino", 21,0001);
+
 
 		miManager.closeLink();
 
