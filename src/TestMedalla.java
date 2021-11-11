@@ -20,7 +20,7 @@ public class TestMedalla {
 	}
 	
 	@Test
-	public void getnomMedalla() {
+	public void getTipoMedalla() {
 		String tipomedalla = "oro";
 		medalla1.setTipomedalla(tipomedalla);
 		assert (medalla1.getTipomedalla().equals(tipomedalla));
